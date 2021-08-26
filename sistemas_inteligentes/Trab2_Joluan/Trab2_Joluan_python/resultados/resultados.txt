@@ -1,31 +1,17 @@
 Tabela das médias das acurácias da base wine
                                   0              1         2         3
 Método               Acuracia Media  Desvio Padrao  Inferior  Superior
-Hill Climbing              0.973529       0.040925  0.958885  0.988174
-Simulated Annealing         0.97549       0.034971  0.962976  0.988004
-Genetic                    0.971678        0.05201  0.953066  0.990289
-
-Testes de hipotese na base wine
-               0                    1        2
-0  Hill Climbing              0.47950  0.73888
-1        0.64773  Simulated Annealing  0.38046
-2        0.74501              0.52671  Genetic
-
-Tabela das médias das acurácias da base wine
-                                  0              1         2         3
-Método               Acuracia Media  Desvio Padrao  Inferior  Superior
-Hill Climbing              0.981046         0.0369  0.967842   0.99425
-Simulated Annealing         0.97549       0.040736  0.960913  0.990067
-Genetic                    0.973747       0.047211  0.956854  0.990641
+Hill Climbing              0.975599        0.03451   0.96325  0.987948
+Simulated Annealing        0.973638       0.045603   0.95732  0.989957
+Genetic                    0.970044       0.042602  0.954799  0.985288
 
 HeterogeneousPooling       0.969826       0.045632  0.953497  0.986155 <-trab1
 
-
 Testes de hipotese na base wine
                0                    1        2
-0  Hill Climbing              0.40763  0.34303
-1        0.19493  Simulated Annealing  0.83689
-2        0.17056              0.80174  Genetic
+0  Hill Climbing              0.73160  0.35727
+1        0.70333  Simulated Annealing  0.66982
+2        0.26381              0.55548  Genetic
 
 
 
@@ -52,7 +38,7 @@ Hill Climbing              0.971068       0.010283  0.967388  0.974747
 Simulated Annealing        0.971438       0.012149   0.96709  0.975786
 Genetic                    0.971434       0.014217  0.966347  0.976521
 
-eterogeneousPooling        0.966062       0.012211  0.962062  0.970801 <-trab1
+HeterogeneousPooling       0.966062       0.012211  0.962062  0.970801 <-trab1
 
 Testes de hipotese na base digits
                0                    1        2

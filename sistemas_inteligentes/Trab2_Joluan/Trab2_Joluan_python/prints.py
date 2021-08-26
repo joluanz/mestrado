@@ -43,6 +43,16 @@ def testehipotese(scores_hgpooling_hillclimbing, scores_hgpooling_simulatedannea
     df_data_p = pd.DataFrame(data_p)
     print("\nTestes de hipotese na base",dataset_name)
     print(df_data_p.T)
+    nomearquivo = dataset_name + '.txt'
+
+    try:
+        arquivo = open(nomearquivo, "a")
+        titulohip = "\n\nTestes de hipotese na base " + dataset_name + "\n"
+        tabelap = df_data_p.T.to_string()
+        arquivo.writelines(titulohip)
+        arquivo.writelines(tabelap)
+    finally:
+        arquivo.close()
 
 
 def tabelascores(scores_hgpooling_hillclimbing, scores_hgpooling_simulatedannealing, scores_hgpooling_genetic, dataset_name):
@@ -54,3 +64,21 @@ def tabelascores(scores_hgpooling_hillclimbing, scores_hgpooling_simulatedanneal
     df_data_tabela = pd.DataFrame(data_tabela)
     print("\nTabela das médias das acurácias da base",dataset_name)
     print(df_data_tabela.T)
+    nomearquivo = dataset_name + '.txt'
+    
+    if dataset_name == 'wine':
+        trab1 = '\nHeterogeneousPooling       0.969826       0.045632  0.953497  0.986155   <-trab1'
+    elif dataset_name == 'breast_cancer':
+        trab1 = '\nHeterogeneousPooling       0.957822       0.021537  0.950115  0.965529   <-trab1'
+    elif dataset_name == 'digits':
+        trab1 = '\nHeterogeneousPooling       0.966062       0.012211  0.962062  0.970801   <-trab1'
+
+    try:
+        arquivo = open(nomearquivo, "a")
+        tituloscores = "\n\nTabela das médias das acurácias da base " + dataset_name  + "\n"
+        tabelascores = df_data_tabela.T.to_string()
+        arquivo.writelines(tituloscores)
+        arquivo.writelines(tabelascores)
+        arquivo.writelines(trab1)
+    finally:
+        arquivo.close()
