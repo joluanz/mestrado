@@ -1,0 +1,15 @@
+
+
+Tabela das médias das acurácias da base breast_cancer
+                                  0              1         2         3
+Método               Acuracia Media  Desvio Padrao  Inferior  Superior
+Hill Climbing              0.950261       0.028657  0.940007  0.960516
+Simulated Annealing        0.960192       0.023501  0.951783  0.968602
+Genetic                    0.957247       0.025118  0.948259  0.966235
+HeterogeneousPooling       0.957822       0.021537  0.950115  0.965529   <-trab1
+
+Testes de hipotese na base breast_cancer
+               0                    1        2
+0  Hill Climbing              0.05323  0.16374
+1        0.04174  Simulated Annealing  0.25962
+2        0.08515              0.57502  Genetic

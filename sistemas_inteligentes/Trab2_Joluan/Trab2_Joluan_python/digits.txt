@@ -1,0 +1,15 @@
+
+
+Tabela das médias das acurácias da base digits
+                                  0              1         2         3
+Método               Acuracia Media  Desvio Padrao  Inferior  Superior
+Hill Climbing              0.967907       0.011825  0.963676  0.972139
+Simulated Annealing        0.970322       0.014456  0.965149  0.975495
+Genetic                    0.971995       0.013366  0.967212  0.976778
+HeterogeneousPooling       0.966062       0.012211  0.962062  0.970801   <-trab1
+
+Testes de hipotese na base digits
+               0                    1        2
+0  Hill Climbing              0.19041  0.06526
+1        0.40681  Simulated Annealing  0.31296
+2        0.14796              0.39724  Genetic

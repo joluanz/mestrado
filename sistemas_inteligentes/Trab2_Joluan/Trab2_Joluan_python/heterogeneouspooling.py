@@ -61,11 +61,11 @@ class HeterogenousPoolingClassifier_Heuristico(BaseEstimator):
             classificadores_optimal = hillclimbing_deterministico(max_time,classificadores,x_train,y_train,self._ordem_classes)
         elif self.heuristica == "simulatedannealing":
             #hiperparametros
-            t = 200
+            temp = 200
             alfa = 0.1
             iter_max = 10
             max_time = 120 #em segundos
-            classificadores_optimal = simulated_annealing(t,alfa,iter_max,max_time,classificadores,x_train,y_train,self._ordem_classes)
+            classificadores_optimal = simulated_annealing(temp,alfa,iter_max,max_time,classificadores,x_train,y_train,self._ordem_classes)
         elif self.heuristica == "genetic":
             #hiperparametros
             pop_size = 20

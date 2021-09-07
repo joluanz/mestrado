@@ -1,0 +1,15 @@
+
+
+Tabela das médias das acurácias da base wine
+                                  0              1         2         3
+Método               Acuracia Media  Desvio Padrao  Inferior  Superior
+Hill Climbing              0.979303       0.034309  0.967026   0.99158
+Simulated Annealing        0.971678       0.040942  0.957027  0.986328
+Genetic                    0.973529       0.045676  0.957185  0.989874
+HeterogeneousPooling       0.969826       0.045632  0.953497  0.986155   <-trab1
+
+Testes de hipotese na base wine
+               0                    1        2
+0  Hill Climbing              0.10672  0.22737
+1        0.15473  Simulated Annealing  0.39614
+2        0.25336              0.66236  Genetic
